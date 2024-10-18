@@ -1,0 +1,15 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.header ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.auth {
+  display: flex;
+  gap: 1rem;
+}
