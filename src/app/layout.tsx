@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
 import './globals.css';
+import '@radix-ui/themes/styles.css';
 import Header from '@/components/header';
+import { Theme } from '@radix-ui/themes';
 
 export const metadata: Metadata = {
   title: 'Kontraksportal',
@@ -15,8 +17,10 @@ export default async function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Header />
-        {children}
+        <Theme>
+          <Header />
+          <main>{children}</main>
+        </Theme>
       </body>
     </html>
   );
