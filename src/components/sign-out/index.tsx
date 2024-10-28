@@ -1,5 +1,6 @@
 import { signOut } from '@/modules/authentication';
 import styles from './sign-out.module.css';
+import { Button } from '@radix-ui/themes';
 
 export default function SignOutButton() {
   return (
@@ -10,7 +11,9 @@ export default function SignOutButton() {
       }}
       className={styles.signOutButton}
     >
-      <button type="submit">Logg ut</button>
+      <Button type="submit" variant="outline">
+        Logg ut
+      </Button>
     </form>
   );
 }
