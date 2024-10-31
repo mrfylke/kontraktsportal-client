@@ -1,8 +1,10 @@
 import { signOut } from '@/modules/authentication';
 import styles from './sign-out.module.css';
 import { Button } from '@radix-ui/themes';
+import { useTranslations } from 'next-intl';
 
 export default function SignOutButton() {
+  const t = useTranslations('SignOutButton');
   return (
     <form
       action={async () => {
@@ -12,7 +14,7 @@ export default function SignOutButton() {
       className={styles.signOutButton}
     >
       <Button type="submit" variant="outline">
-        Logg ut
+        {t('label')}
       </Button>
     </form>
   );
