@@ -1,0 +1,18 @@
+{
+  "Home": {
+    "title": "Kontraktsportal"
+  },
+  "SignInPage": {
+    "title": "Logg på kontraktsportal",
+    "subtitle": "Bruk din konto i FRAM for å logge inn på kontraktsportalen.",
+    "form": {
+      "button": "Logg på med FRAMkonto"
+    }
+  },
+  "SignOutButton": {
+    "label": "Logg ut"
+  },
+  "Header": {
+    "userInfo": "Du er logget inn som {name}"
+  }
+}
